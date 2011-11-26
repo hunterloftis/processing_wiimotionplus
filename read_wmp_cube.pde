@@ -59,9 +59,9 @@ void draw()
   diff = ymag-newYmag;
   if (abs(diff) >  0.01) { ymag -= diff/4.0; }
 
-  rotateX(pitch);
   rotateY(-yaw);  
-  rotateZ(roll);   
+  rotateZ(roll);    
+  rotateX(-pitch); 
   
   scale(90);
   beginShape(QUADS);
